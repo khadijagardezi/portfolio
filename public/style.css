@@ -1,43 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 ::-webkit-scrollbar {
   display: none !important;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
 }
 
 header {
-  background-color: #D8BFD8;
+  background-color: #d8bfd8;
   height: 100vh;
 }
+
 .breadcrumb {
-  background: #DDA0DD;
+  background: #dda0dd;
   color: white !important;
   font-size: 2rem;
 }
+
 .breadcrumb-item a:hover {
   color: #662d91 !important;
   text-decoration: underline !important;
 }
+
 .p-logo {
   padding: 2rem !important;
 }
+
 .logos {
-  background-color: #D8BFD8;
+  background-color: #d8bfd8;
 }
+
 .skills {
-  background-color: #D8BFD8;
+  background-color: #d8bfd8;
 }
+
 .navbar-brand {
   color: #662d91 !important;
   font-weight: 500;
 }
+
 .text-purple {
   color: #662d91 !important;
   font-weight: 500;
@@ -50,9 +59,10 @@ header {
   width: 100%;
   z-index: 5;
 }
+
 .navbar-nav {
-  background: #D8BFD8;
-  border: .5px solid #f0f0e6;
+  background: #d8bfd8;
+  border: 0.5px solid #f0f0e6;
 }
 
 .nav-item a {
@@ -64,16 +74,15 @@ header {
 }
 
 .nav-item:hover {
-  border: .5px solid #662d91;
+  border: 0.5px solid #662d91;
 }
-
 
 /* ////........Home Content........//// */
 
 .home-content .name {
   position: relative;
   top: 2vh;
-  color: #33006F;
+  color: #33006f;
   text-align: center;
 }
 
@@ -99,9 +108,8 @@ header {
 .angle-down-icon a {
   text-decoration: none;
   color: #662d91;
-  padding: .9rem;
+  padding: 0.9rem;
 }
-
 
 .angle-down-icon a:hover {
   color: #895989;
@@ -110,7 +118,7 @@ header {
 /* ////........About Me........//// */
 
 .about-me {
-  background-color: #DDA0DD;
+  background-color: #dda0dd;
   padding: 6rem 0;
   /*height: 100vh;*/
 }
@@ -122,7 +130,6 @@ header {
   text-align: center;
 }
 
-
 .about-content {
   font-size: 1.5rem;
   color: #662d91;
@@ -130,16 +137,14 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  letter-spacing: 3px; 
-
+  letter-spacing: 3px;
 }
-
 
 /* ////.....Portfolio......///// */
 /* #DDA0DD; */
 
 .portfolio {
-  background: #DDA0DD;
+  background: #dda0dd;
   padding: 2rem 0;
 }
 
@@ -172,7 +177,7 @@ header {
 
 .proj .proj1-details i {
   font-size: 1.5rem;
-  color: white
+  color: white;
 }
 
 .proj .proj1-details h2 {
@@ -245,7 +250,7 @@ button:hover .fas {
 /* ////......Contact......///// */
 
 .contact {
-  background: #D8BFD8;
+  background: #d8bfd8;
   position: relative;
   height: 40vh;
 }
@@ -293,12 +298,13 @@ button:hover .fas {
 
 @media (max-width: 500px) {
   html {
-    font-size:15px;
+    font-size: 15px;
   }
 
   .profile {
     width: 250px !important;
   }
+
   .proj {
     display: flex;
     justify-content: center;
@@ -308,14 +314,16 @@ button:hover .fas {
   .proj img {
     margin: 1.6rem;
   }
+
   .proj1-details {
-    width: 30rem  !important;
+    width: 30rem !important;
   }
+
   .contact-content {
     width: 100%;
   }
+
   .navbar-brand img {
     width: 30px !important;
   }
 }
-
