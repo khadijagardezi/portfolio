@@ -1,14 +1,15 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static('public'));
 
 // Route for the home page section
 
-app.get(['/', '/about', '/skills', '/portfolio', '/contact'], (_, res) => {
+app.get(['/', '/about', '/skills', '/portfolio', '/contact'], (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
-app.get('/projects', (_, res) => {
+app.get('/projects', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/projects.html'));
 });
 
