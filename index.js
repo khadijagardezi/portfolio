@@ -9,9 +9,11 @@ app.use(express.static('public'));
 app.get(['/', '/about', '/skills', '/portfolio', '/contact'], (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
-app.get('/projects', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/projects.html'));
-});
+
+app.route('/projects')
+ 	.get(function (req, res) {
+    res.sendFile(path.join(__dirname, 'public/projects.html'));
+	});
 
 // Start the server
 app.listen(3000, () => {
